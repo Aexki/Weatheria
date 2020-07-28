@@ -9,14 +9,14 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    var api = 'http://api.openweathermap.org/data/2.5/weather?lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + '&appid=030c379618707cd9de6a4582dcdc3b05';
+    var api = 'https://api.openweathermap.org/data/2.5/weather?lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + '&appid=030c379618707cd9de6a4582dcdc3b05';
     $.getJSON(api, weathercall);
 }
 
 
 function showdetail() {
     var place = document.getElementById("textview").value;
-    var apicall = 'http://api.openweathermap.org/data/2.5/weather?q=' + place + '&appid=030c379618707cd9de6a4582dcdc3b05';
+    var apicall = 'https://api.openweathermap.org/data/2.5/weather?q=' + place + '&appid=030c379618707cd9de6a4582dcdc3b05';
 
     $.getJSON(apicall, weathercall);
 }
