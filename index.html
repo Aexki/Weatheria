@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Weatheria</title>
+    <link rel="stylesheet" href="weatheriastyle.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <label class="logo">Weatheria</label>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#help">Help</a></li>
+                <li><a href="#aboutdeveloper">About Developer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="search" style="margin-top: 40px;">
+        <h3 style="text-align: center; border: none; outline: none; background: none;">
+            <i class="fas fa-search-location"></i>
+            <input id="textview" placeholder="Search City..." style="border: none; outline: none; background:transparent; border-bottom: 2px solid black;">
+            <input class="button" type="button" value="Search" onclick="showdetail()">
+            <br>Get current location>
+            <input type="image" src="https://previews.123rf.com/images/giamportone/giamportone1711/giamportone171100535/90514805-location-icon-map-pin-mark-gps-destination-symbol.jpg" onclick="getLocation()" style="border: 2px solid black" width="40" height="40">
+        </h3>
+    </div>
+
+    <div id="intro">
+        <h1>The best Weather site<br>to know the current weather<br> through out the World...</h1>
+    </div>
+
+    <div id="data" style="margin-top:20px;">
+        <table class="display">
+            <tr>
+                <td id="cityname" class="cityname"></td>
+                <td id="temp" class="temp" colspan=2></td>
+            </tr>
+            <tr>
+                <td id="wind" class="wind" colspan=2></td>
+                <td id="weather" class="weather"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="weatheriascript.js"></script>
+</body>
+
+</html>

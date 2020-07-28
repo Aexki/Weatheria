@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-size: 30px;
+    width: 100%;
+    background: rgba(49, 11, 105, 0.671)!important;
+}
+
+nav {
+    background: rgb(33, 5, 61);
+    height: 80px;
+    width: 100%;
+}
+
+::placeholder {
+    color: black;
+}
+
+nav ul {
+    float: right;
+    padding: 0 100px;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 80px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: rgba(76, 44, 124, 0.842);
+    transition: 0.5s;
+}
+
+label.logo {
+    color: white;
+    font-size: 50px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-family: vatican, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#data {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 20%;
+    display: none;
+}
+
+.display td {
+    border: 2px solid black;
+}
+
+.display {
+    border: 8px solid black;
+    width: 80%;
+    align-self: auto;
+    border-radius: 10px;
+}
+
+.cityname {
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+}
+
+.wind {
+    width: 100px;
+    height: 300px;
+    padding: 10px;
+}
+
+.temp {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+.weather {
+    width: 600px;
+    height: 200px;
+    padding: 10px;
+}
+
+#textview {
+    font-size: 30px;
+    color: black;
+    opacity: 1;
+    border-bottom: 2px solid black;
+    padding-left: 10px;
+}
+
+#intro {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(33, 5, 61);
+}
+
+.button {
+    height: 35px;
+    border-radius: 20px;
+    color: white;
+    background: rgb(33, 5, 61);
+    width: 50px;
+    border: none;
+}
